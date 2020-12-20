@@ -1,0 +1,50 @@
+{
+    "name": "tkaratug/laravel-dashboard-trello-tile",
+    "description": "Trello tile for Laravel Dashboard",
+    "keywords": [
+        "tkaratug",
+        "laravel-dashboard-trello-tile"
+    ],
+    "homepage": "https://github.com/tkaratug/laravel-dashboard-trello-tile",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Turan Karatuğ",
+            "email": "tkaratug@hotmail.com.tr",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0|^7.4",
+        "spatie/laravel-dashboard": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tkaratug\\TrelloTile\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tkaratug\\TrelloTile\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tkaratug\\TrelloTile\\TrelloTileServiceProvider"
+            ]
+        }
+    }
+}
