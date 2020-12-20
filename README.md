@@ -79,7 +79,7 @@ Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 
 ## Security
 
-If you discover any security related issues, please email security@voke.dev instead of using the issue tracker.
+If you discover any security related issues, please email tkaratug@hotmail.com.tr instead of using the issue tracker.
 
 ## Credits
 
