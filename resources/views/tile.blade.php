@@ -27,7 +27,7 @@
                                     @if ($card['due'])
                                         <span class="text-xs flex items-center">
                                             <svg class="h-3 fill-current text-gray-600 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 12v-6h-2v8h7v-2h-5z"/></svg>
-                                            <span class="{{ \Carbon\Carbon::make($card['due'])->isToday() ? 'text-red-600': '' }}">
+                                            <span class="{{ \Carbon\Carbon::make($card['due'])->isPast() ? 'text-red-600': '' }}">
                                                 {{ \Carbon\Carbon::make($card['due'])->toDateString() }}
                                             </span>
                                         </span>
